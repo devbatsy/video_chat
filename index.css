@@ -1,0 +1,155 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	user-select: none;
+}
+::-webkit-scrollbar
+{
+    width: 3px;
+    height: 80%;
+	background-color: #dfebff00;
+	/* color:#16192965 */
+}
+::-webkit-scrollbar-track
+{
+    background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#0060FF;
+    width: 3px;
+	border-radius: 20px;
+}
+::-webkit-scrollbar:hover ::-webkit-scrollbar-thumb{
+    width: 3px;
+}
+#adjustModerator
+{
+	display: flex;
+}
+#back_to_front_page
+{
+	display: none;
+}
+#navTwinTab
+{
+	display: none;
+}
+#text_chat_participant
+{
+	width:fit-content;
+	min-width:350px;
+	margin-top: 1px;
+	margin-left: 1px;
+	position: relative;
+	transition: opacity linear .3s,transform linear .2s;
+}
+#viewConnectedDiv
+{
+	display: flex;
+	overflow-x: scroll;
+	font-size:10px;
+}
+.viewConnectedDivTabs
+{
+	height:80px;
+	min-height:80px;
+	width:80px;
+	min-width:80px;
+}
+.select{
+	cursor: pointer;
+	user-select: none;
+	transition: all linear .3s;
+}
+.select:active
+{
+	transform: scale(1.1);
+}
+#go_to_streaming
+{
+	display: none;
+}
+.recButton
+{
+	height:35px;
+	width:35px;
+	min-height:35px;
+	min-width:35px;
+}
+#nav_chat_mode_icon
+{
+	min-height:70px;
+	height: 70px;
+	width:70px;
+	min-width:70px;
+}
+/* #adjustModerator{
+	display: block;
+} */
+
+@media screen and (max-width:1000px){
+	.nav_title
+	{
+		font-size:13px;
+	}
+	#adjustModerator
+	{
+		display: none;
+	}
+}
+@media screen and (max-width:800px){
+	#go_to_streaming
+	{
+		display: block;
+	}
+	.recButton
+	{
+		height:30px;
+		width:30px;
+		min-height:30px;
+		min-width:30px;
+	}
+	#adjustNavParticipant
+	{
+		display: none;
+	}
+	#navTwinTab
+	{
+		display: flex;
+	}
+	#text_chat_participant
+	{
+		width:100%;
+		position: fixed;
+		/* opacity: 0; */
+		top:0;
+		margin: 0;
+	}
+	/* #viewConnectedDiv
+	{
+		display: none;
+	} */
+	.viewConnectedDivTabs
+	{
+		height:50px;
+		min-height:50px;
+		width:50px;
+		min-width:50px;
+		font-size:8px;
+	}
+}
+@media screen and (max-width:680px){
+	#back_to_front_page
+	{
+		display: block;
+	}
+	#nav_chat_mode_icon
+	{
+		min-height:40px;
+		height: 40px;
+		width:40px;
+		min-width:40px;
+	}
+}
